@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terimakasih</title>
+</head>
+
+<body>
+
+
+    <div class="card-content">
+        <div class="">
+            <h3>Nama : </h3>
+            <p id="displayName"></p>
+        </div>
+        <div class="">
+            <h3>Email : </h3>
+            <p id="displayEmail"></p>
+        </div>
+        <div class="">
+            <h3>Domisili : </h3>
+            <p id="displayDom"></p>
+        </div>
+        <div class="">
+            <h3>Alasan : </h3>
+            <p id="displatReason"></p>
+        </div>
+    </div>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const name = urlParams.get('Name');
+        const email = urlParams.get('Email');
+        const dom = urlParams.get('Dom');
+        const reason = urlParams.get('Reason');
+
+        document.getElementById('displayName').innerText = name;
+        document.getElementById('displayEmail').innerText = email;
+        document.getElementById('displayDom').innerText = dom;
+        document.getElementById('displayReason').innerText = reason;
+    </script>
+</body>
+
+</html>

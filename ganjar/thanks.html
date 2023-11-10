@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us</title>
+    <link rel="stylesheet" href="form.css">
+
+</head>
+<body>
+    <h2>Terima Kasih!</h2>
+    <h6>Data anda sudah kami rekam.</h6>
+
+    <label for="name"></label><br>
+    <!-- buat display inputan -->
+    <p id="displayFName"></p>
+    <p id="displayLName"></p>
+
+    <label for="email"></label><br>
+    <p id="displayEmail"></p>
+
+    <script>
+        // ganti logic
+        const urlParams = new URLSearchParams(window.location.search);
+        const fname = urlParams.get('fname');
+        const lname = urlParams.get('lname');
+        const email = urlParams.get('email');
+        const address = urlParams.get('address');
+        const msg = urlParams.get('message');
+        const kebij = urlParams.get('kebijakan');
+
+        document.getElementById('displayFName').innerText = fname;
+        document.getElementById('displayLName').innerText = lname;
+        document.getElementById('displayAddress').innerText = address;
+        document.getElementById('displayMsg').innerText = msg;
+        document.getElementById('displayKebijakan').innerText = kebij;
+    </script>
+</body>
+</html>

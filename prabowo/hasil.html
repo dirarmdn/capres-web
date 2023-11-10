@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bergabung Bersama Kami</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="navbar-container">
+        <nav id="nav-list">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo-prabowo-gibran.png" alt="Prabowo Gibran">
+                </a>
+            </div>
+            <ul class="nav-items">
+                <li><a href="profile.html"><span data-hover="PROFIL">PROFIL</span></a></li>
+                <li><a href="galeri.html"><span data-hover="GALERI">GALERI</span></a></li>
+                <li><a href="visi_misi.html"><span style="width: 90px;" data-hover="VISI & MISI">VISI & MISI</span></a>
+                </li>
+                <li><a class="merah" href="form.html">GABUNG</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="join-us">
+        <section class="hero-join">
+        </section>
+        <section class="form-join">
+            <div class="card-form">
+                <div class="card-header">
+                    <h1>Terima kasih Telah Bergabung!</h1>
+                    <p>Berikut adalah Detail Pendaftaran Anda:</p>
+                </div>
+                <div class="card-content">
+                    <div class="">
+                        <h3>Nama : </h3>
+                        <p id="displayName"></p>
+                    </div>
+                    <div class="">
+                        <h3>Email : </h3>
+                        <p id="displayEmail"></p>
+                    </div>
+                    <div class="">
+                        <h3>Nomor Telepon : </h3>
+                        <p id="displayTelp"></p>
+                    </div>
+                    <div class="">
+                        <h3>Provinsi : </h3>
+                        <p id="displayProvince"></p>
+                    </div>
+                    <div class="">
+                        <h3>Alasan : </h3>
+                        <p id="displayReason"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const name = urlParams.get('input-name');
+        const email = urlParams.get('input-email');
+        const telp = urlParams.get('input-telp');
+        const province = urlParams.get('input-prov');
+        const reason = urlParams.get('input-reas');
+
+        document.getElementById('displayName').innerText = name;
+        document.getElementById('displayEmail').innerText = email;
+        document.getElementById('displayTelp').innerText = telp;
+        document.getElementById('displayProvince').innerText = province;
+        document.getElementById('displayReason').innerText = reason;
+    </script>
+
+    <footer>
+        <div class="copyright">
+            <h1>© Dhira Ramadini 2023</h1>
+        </div>
+        <div class="logo">
+            <img src="img/logo-prabowo-gibran.png" alt="">
+        </div>
+    </footer>
+</body>
+
+</html>

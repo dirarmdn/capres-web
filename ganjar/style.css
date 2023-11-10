@@ -1,0 +1,52 @@
+html {
+    width: 100%;
+    height:100%;
+
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav {
+    background-color: #AE0000;
+    border-style: solid;
+    border-width: 10px;
+    border-color: #AE0000;
+}
+
+.link-drive{
+    color: white;
+    background-color: #AE0000;
+    border: 3px;
+    border-radius: 8px;
+    padding: 10px;
+    border-style: solid;
+    border-color: #AE0000;
+    border-style: outset;
+}
+
+.text-profile{
+    top: 1270px;
+    margin-left: 100px;
+    margin-right: 100px;
+    height: 130px;
+}
+
+.text-warna {
+    color: #0000FF;
+}
+
+.text-nama {
+    font-weight: 900;
+}
+
+.tahun-color {
+    color: #AE0000;
+}
+
+.back-color {
+    color: black;
+}
